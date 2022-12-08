@@ -1,0 +1,7 @@
+.project-card {
+    width: 48%;
+    margin: 0;
+    margin-bottom: 4%;
+    text-transform: lowercase;
+    background-color: rgb(211, 230, 243) !important;
+}
