@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import { HashRouter as Router, Route, Routes } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 import Landing from './landing/landing';
 import Personas from './cvs-uiux/cvs-uiux';
@@ -21,7 +21,7 @@ root.render(
     <Router>
       <Header className='header'/>
       <Routes>
-        <Route path='/' element={<Landing />} />
+        <Route path='' element={<Landing />} />
         <Route path='/cvs-uiux' element={<Personas />} />
         <Route path='/manga-mockup' element={<IterativeDesign />} />
         {/* <Route path='/hackernews-redesign' element={<HackerNewsSummary />} /> */}
