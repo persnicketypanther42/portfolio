@@ -33,8 +33,8 @@ export const underConstructionProjectData = [
     {
         title: 'bcup',
         linkPath: '/bc-up',
-        imgPath: '/assets/breast-cancer-slide.jpeg',
-        imgAlt: 'Leshawna from Total Drama Island',
+        imgPath: '/assets/breast-cancer-slide.png',
+        imgAlt: 'breast cancer slide iamge',
         desc: 'breast cancer unbiased prediction (bcup): mitigating racial imbalances in accuracy of cnn models for predicting breast cancer diagnosis.'
     }
 ]
