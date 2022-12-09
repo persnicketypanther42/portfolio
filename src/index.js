@@ -21,14 +21,14 @@ root.render(
     <Router>
       <Header className='header'/>
       <Routes>
-        <Route path='' element={<Landing />} />
-        <Route path='/cvs-uiux' element={<Personas />} />
-        <Route path='/manga-mockup' element={<IterativeDesign />} />
-        {/* <Route path='/hackernews-redesign' element={<HackerNewsSummary />} /> */}
-        {/* <Route path='/hackernews-redesign/live' element={<HackerNewsLive />} /> */}
-        {/* <Route path='/skincare-app' element={<DevelopmentSummary />} /> */}
-        {/* <Route path='/skincare-app/live' element={<DevelopmentLive />} /> */}
-        {/* <Route path='/bcup' element={<BCUP />} />  */}
+        <Route path='/portfolio' element={<Landing />} />
+        <Route path='/portfolio/cvs-uiux' element={<Personas />} />
+        <Route path='/portfolio/manga-mockup' element={<IterativeDesign />} />
+        {/* <Route path='/portfolio/hackernews-redesign' element={<HackerNewsSummary />} /> */}
+        {/* <Route path='/portfolio/hackernews-redesign/live' element={<HackerNewsLive />} /> */}
+        {/* <Route path='/portfolio/skincare-app' element={<DevelopmentSummary />} /> */}
+        {/* <Route path='/portfolio/skincare-app/live' element={<DevelopmentLive />} /> */}
+        {/* <Route path='/portfolio/bcup' element={<BCUP />} />  */}
       </Routes>
       <Footer className='footer'/>
     </Router>
