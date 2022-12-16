@@ -14,7 +14,7 @@ export const pastProjectData = [
         desc: 'responsive and accessible redesign of hackernews, written in pure html/css.'
     },
     {
-        title: 'cvs self-checkout: personas and storyboarding',
+        title: 'ux research: cvs checkout',
         linkPath: '/portfolio/cvs-uiux',
         imgPath: '/assets/cvs-checkout.jpeg',
         imgAlt: 'cvs self-checkout kiosk',
@@ -32,9 +32,9 @@ export const pastProjectData = [
 export const underConstructionProjectData = [
     {
         title: 'bcup',
-        linkPath: '/bc-up',
+        linkPath: '/portfolio/bc-up',
         imgPath: '/assets/breast-cancer-slide.png',
         imgAlt: 'breast cancer slide iamge',
-        desc: 'breast cancer unbiased prediction (bcup): mitigating racial imbalances in accuracy of cnn models for predicting breast cancer diagnosis.'
+        desc: 'breast cancer unbiased prediction (bcup): exploring potential racial biases in accuracy of models for predicting breast cancer diagnosis.'
     }
 ]

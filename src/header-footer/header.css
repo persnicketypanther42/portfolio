@@ -1,0 +1,36 @@
+.Appbar {
+    background-color: #173795 !important;
+    color: #ffffff;
+    padding: 0 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.css-189gf36-MuiPaper-root-MuiAppBar-root {
+    background-color: #173795 !important;
+    color: #ffffff;
+    padding: 0 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.css-hyum1k-MuiToolbar-root {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.route:hover {
+    background-color: rgb(6, 157, 165) !important;
+    box-shadow: 0 0 0 0.2rem rgb(211, 230, 243) !important;
+    transform: scale3d(1.05, 1.05, 1);
+}
+
+.logo:hover {
+    background-color: rgb(6, 157, 165) !important;
+    box-shadow: 0 0 0 0.2rem rgb(211, 230, 243) !important;
+    transform: scale3d(1.05, 1.05, 1);
+}
