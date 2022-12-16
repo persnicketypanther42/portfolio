@@ -16,7 +16,7 @@ import './header.css';
 
 function Header() {
 
-  const logo = '<name surname / >'
+  const logo = '< name surname / >'
 
   return (
     <AppBar className="Appbar" position="fixed" sx={{backgroundColor: 173795}}>
