@@ -6,13 +6,13 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Landing from './landing/landing';
 import About from './about/about';
 import Personas from './cvs-uiux/cvs-uiux';
-// import DevelopmentSummary from './development/summary';
-// import DevelopmentLive from './development/development';
-// import HackerNewsSummary from './hackernews-redesign/summary';
-// import HackerNewsLive from './hackernews-redesign/hackernews';
+import DevelopmentSummary from './development/developmentsummary';
+import DevelopmentLive from './development/developmentlive';
+import HackerNewsSummary from './hackernews-redesign/redesignsummary';
+import HackerNewsLive from './hackernews-redesign/redesignlive';
 
-import IterativeDesign from './iterative-design/iterative-design';
-// import BCUP from './bcup/bcup';
+import EyeTracking from './eye-tracking/eye-tracking';
+import BCUP from './bcup/bcup';
 import Footer from './header-footer/footer';
 import Header from './header-footer/header';
 
@@ -27,12 +27,12 @@ class App extends Component {
           <Route path='/portfolio' element={<Landing />} />
           <Route path='/portfolio/about' element={<About />} />
           <Route path='/portfolio/cvs-uiux' element={<Personas />} />
-          <Route path='/portfolio/manga-mockup' element={<IterativeDesign />} />
-          {/* <Route path='/portfolio/hackernews-redesign' element={<HackerNewsSummary />} /> */}
-          {/* <Route path='/portfolio/hackernews-redesign/live' element={<HackerNewsLive />} /> */}
-          {/* <Route path='/portfolio/skincare-app' element={<DevelopmentSummary />} /> */}
-          {/* <Route path='/portfolio/skincare-app/live' element={<DevelopmentLive />} /> */}
-          {/* <Route path='/portfolio/bcup' element={<BCUP />} />  */}
+          <Route path='/portfolio/eye-tracking' element={<EyeTracking />} />
+          <Route path='/portfolio/hackernews-redesign' element={<HackerNewsSummary />} />
+          <Route path='/portfolio/hackernews-redesign/live' element={<HackerNewsLive />} />
+          <Route path='/portfolio/skincare-app' element={<DevelopmentSummary />} />
+          <Route path='/portfolio/skincare-app/live' element={<DevelopmentLive />} />
+          <Route path='/portfolio/bcup' element={<BCUP />} /> 
         </Routes>
         <Footer className='footer'/>
       </Router>

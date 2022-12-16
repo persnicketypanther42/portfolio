@@ -1,5 +1,6 @@
 import React, { Component}  from 'react';
 import './project.css';
+import '../index.css'
 import { Card, Typography, CardContent, CardActionArea, CardMedia } from '@mui/material';
 import { Link } from "react-router-dom";
 
@@ -23,6 +24,7 @@ class Project extends Component {
                         className="Card-image"
                         component="img"
                         height="100%"
+                        width="scale-down"
                         image={process.env.PUBLIC_URL + this.props.imgPath}
                         alt={this.props.imgAlt}
                     />

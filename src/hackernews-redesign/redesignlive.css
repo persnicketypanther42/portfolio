@@ -1,9 +1,10 @@
 .iframe {
+    padding-top: 64px;
     height: 100vw;
     width: 100%;
   }
   
-  .iterative {
+  .personas {
     display: flex;
     flex-direction: column;
     justify-content: center;

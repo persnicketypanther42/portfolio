@@ -30,7 +30,7 @@
 }
 
 .project-card:hover > .action-area > .Card-image {
-    filter: brightness(40%);
+    filter: brightness(50%);
     transition: all 1s ease;
 }
 

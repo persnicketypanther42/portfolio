@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Typography } from '@mui/material'
 import './footer.css'
 
+const logo = '< name surname / >';
 class Footer extends Component {
 
     render() {
@@ -11,7 +12,7 @@ class Footer extends Component {
                 coming to you with lots of love from providence, ri.
                 </Typography>
                 <Typography variant="body2" color="text.secondary" align="center">
-                \name surname\ © 2022
+                {logo} © 2022
                 </Typography>
             </div>
         );
