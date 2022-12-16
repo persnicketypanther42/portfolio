@@ -65,25 +65,9 @@ function Header() {
             ))}
           </List>
 
-          {/* <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/portfolio"
-            sx={{
-              mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontWeight: 700,
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            {logo}
-          </Typography> */}
-
           <Typography
             className="logo"
-            variant="h5"
+            variant="h7"
             noWrap
             component="a"
             href="/portfolio"
