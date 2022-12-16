@@ -4,6 +4,7 @@ import './index.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 import Landing from './landing/landing';
+import About from './about/about';
 import Personas from './cvs-uiux/cvs-uiux';
 // import DevelopmentSummary from './development/summary';
 // import DevelopmentLive from './development/development';
@@ -24,6 +25,7 @@ class App extends Component {
         <Header className='header'/>
         <Routes>
           <Route path='/portfolio' element={<Landing />} />
+          <Route path='/portfolio/about' element={<About />} />
           <Route path='/portfolio/cvs-uiux' element={<Personas />} />
           <Route path='/portfolio/manga-mockup' element={<IterativeDesign />} />
           {/* <Route path='/portfolio/hackernews-redesign' element={<HackerNewsSummary />} /> */}

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Typography } from '@mui/material'
+import './footer.css'
 
 class Footer extends Component {
 

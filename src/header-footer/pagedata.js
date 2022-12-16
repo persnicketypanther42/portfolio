@@ -5,6 +5,6 @@ export const pageData = [
     },
     {
         title: 'about',
-        router: '/about',
+        router: '/portfolio/about',
     }
 ];

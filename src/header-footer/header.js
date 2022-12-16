@@ -16,7 +16,7 @@ import './header.css';
 
 function Header() {
 
-  const logo = '<name surname />'
+  const logo = '<name surname / >'
 
   return (
     <AppBar className="Appbar" position="fixed" sx={{backgroundColor: 173795}}>
@@ -37,6 +37,7 @@ function Header() {
               width: 'fit-content',
               marginBlockLeft: '2rem',
               marginBlockRight: '2rem',
+              fontStyle: 'italic',
             }}
           >
             {logo}
@@ -56,7 +57,8 @@ function Header() {
               textDecoration: 'none',
               width: 'fit-content',
               textAlign: 'center',
-              overflow: 'revert'
+              overflow: 'revert',
+              fontStyle: 'italic',
             }}
           >
             {logo}
@@ -74,7 +76,7 @@ function Header() {
             }}>
             {pageData.map((item) => (
               <ListItem key={item.title} disablePadding>
-                <ListItemButton className="route" component={HashLink} to={item.router} sx={{ textAlign: 'center' }}>
+                <ListItemButton className="route" component={HashLink} smooth to={item.router} sx={{ textAlign: 'center' }}>
                   <ListItemText primary={item.title} />
                 </ListItemButton>
               </ListItem>
