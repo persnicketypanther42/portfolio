@@ -8,7 +8,12 @@ class Landing extends Component {
     renderDescription = () => {
         return (
             <div className='description'>
-                <h1 className='animated-landing-heading'>hey there, i'm luke.</h1>
+                <h1 className='animated-landing-heading'>hey there, i'm \name\.</h1>
+                {/* <p className='intro-text'>i'm a computer science, applied math, and pure math student @ brown university.
+                i'm also an incoming ai/ml research assistant @ mit lincoln laboratory (winter/spring '23) and an incoming
+                data engineering intern @ boeing (summer '23). as a passionate science communicator, i have been polishing
+                my skills in developing simple and effective interfaces, with the intent of abstracting these skills to
+                my intended field of ai/ml and data engineering.</p> */}
                 <p className='edu-text'>computer science, applied math, and pure math student @ brown university</p>
                 <p className='research-text'>incoming ai/ml research assistant @ mit lincoln laboratory (winter/spring '23)</p>
                 <p className='intern-text'>incoming data engineering intern @ boeing (summer '23)</p>

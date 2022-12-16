@@ -10,7 +10,7 @@ class Footer extends Component {
                 coming to you with lots of love from providence, ri.
                 </Typography>
                 <Typography variant="body2" color="text.secondary" align="center">
-                luke briody © 2022
+                \name surname\ © 2022
                 </Typography>
             </div>
         );

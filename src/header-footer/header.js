@@ -16,17 +16,12 @@ import './header.css';
 
 function Header() {
 
-  const logo = '<luke briody />'
+  const logo = '<name surname />'
 
   return (
     <AppBar className="Appbar" position="fixed" sx={{backgroundColor: 173795}}>
-      <Container className="appbar" maxWidth="xl"
-        sx={{
-          display: 'block',
-          margin: 'auto',
-        }}
-      >
-        <Toolbar>
+      <Container className="Appbar-container" maxWidth="xl">
+        <Toolbar className="Appbar-toolbar">
         <Typography
             className="logo"
             variant="h6"
@@ -47,24 +42,6 @@ function Header() {
             {logo}
           </Typography>
 
-          <List
-            sx={{
-              display: { xs: 'none', md: 'flex' },
-              flexDirection: 'row',
-              justifyContent: 'space-between',
-              alignItems: 'center',
-              width: 'fit-content',
-              marginLeft: 'auto',
-            }}>
-            {pageData.map((item) => (
-              <ListItem key={item.title} disablePadding>
-                <ListItemButton className="route" component={HashLink} to={item.router} sx={{ textAlign: 'center' }}>
-                  <ListItemText primary={item.title} />
-                </ListItemButton>
-              </ListItem>
-            ))}
-          </List>
-
           <Typography
             className="logo"
             variant="h7"
@@ -84,6 +61,25 @@ function Header() {
           >
             {logo}
           </Typography>
+
+          <List
+            className="list"
+            sx={{
+              display: { xs: 'flex', md: 'flex' },
+              flexDirection: 'row',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              width: 'fit-content',
+              marginLeft: 'auto',
+            }}>
+            {pageData.map((item) => (
+              <ListItem key={item.title} disablePadding>
+                <ListItemButton className="route" component={HashLink} to={item.router} sx={{ textAlign: 'center' }}>
+                  <ListItemText primary={item.title} />
+                </ListItemButton>
+              </ListItem>
+            ))}
+          </List>
         </Toolbar>
       </Container>
     </AppBar>

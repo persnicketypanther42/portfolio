@@ -10,7 +10,7 @@
 /* set projet-card hover style */
 .project-card:hover {
     background-color: rgb(211, 230, 243) !important;
-    box-shadow: 0 0 0 0.2rem rgb(211, 230, 243) !important;
+    box-shadow: 0 0 0 0.2rem rgb(226, 179, 249) !important;
     transform: scale3d(1.05, 1.05, 1);
 }
 
