@@ -36,6 +36,7 @@
 
 .Card-header {
     display: none;
+    text-align: center;
 }
 
 .action-area {
