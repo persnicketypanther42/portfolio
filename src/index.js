@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import ScrollToTop from './scrolltotop';
 
 import Landing from './landing/landing';
 import About from './about/about';
@@ -22,19 +23,20 @@ class App extends Component {
 
     return (
       <Router>
-        <Header className='header'/>
-        <Routes>
-          <Route path='/portfolio' element={<Landing />} />
-          <Route path='/portfolio/about' element={<About />} />
-          <Route path='/portfolio/cvs-uiux' element={<Personas />} />
-          <Route path='/portfolio/eye-tracking' element={<EyeTracking />} />
-          <Route path='/portfolio/hackernews-redesign' element={<HackerNewsSummary />} />
-          <Route path='/portfolio/hackernews-redesign/live' element={<HackerNewsLive />} />
-          <Route path='/portfolio/skincare-app' element={<DevelopmentSummary />} />
-          <Route path='/portfolio/skincare-app/live' element={<DevelopmentLive />} />
-          <Route path='/portfolio/bcup' element={<BCUP />} /> 
-        </Routes>
-        <Footer className='footer'/>
+        <ScrollToTop />
+          <Header className='header'/>
+            <Routes>
+              <Route path='/portfolio' element={<Landing />} />
+              <Route path='/portfolio/about' element={<About />} />
+              <Route path='/portfolio/cvs-uiux' element={<Personas />} />
+              <Route path='/portfolio/eye-tracking' element={<EyeTracking />} />
+              <Route path='/portfolio/hackernews-redesign' element={<HackerNewsSummary />} />
+              <Route path='/portfolio/hackernews-redesign/live' element={<HackerNewsLive />} />
+              <Route path='/portfolio/skincare-app' element={<DevelopmentSummary />} />
+              <Route path='/portfolio/skincare-app/live' element={<DevelopmentLive />} />
+              <Route path='/portfolio/bcup' element={<BCUP />} /> 
+            </Routes>
+          <Footer className='footer'/>
       </Router>
     );
   }
