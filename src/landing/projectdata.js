@@ -4,7 +4,7 @@ export const pastProjectData = [
         linkPath: '/portfolio/hackernews-redesign',
         imgPath: '/assets/hackernews-logo.jpeg',
         imgAlt: 'ycombinator hackernews logo',
-        desc: 'how can we make technical subjects easier to parse through clean design? familiar resources to technical experts can be inaccessible, even jarring to new users. in this project, i evaluate and improve the usability and accessibility of hackernews, a popular tech news forum. introducing a simpler, more intuitive design and responsive layout for desktop and mobile.'
+        desc: 'how can we make technical subjects easier to parse through clean design? familiar resources to technical experts can be inaccessible, even jarring to new users. in this project, i evaluate and improve the usability and accessibility of hackernews, a popular tech news forum. introducing a simpler, more intuitive design and responsive layout for tablet, desktop, and mobile.'
     },
     {
         title: 'analyzing user behavior (i): cvs self-checkout',

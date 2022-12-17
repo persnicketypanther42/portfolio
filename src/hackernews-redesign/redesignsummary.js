@@ -30,16 +30,16 @@ function HackerNewsSummary(){
                     <CardContent>
                         <Typography variant='h4' className='section-title'>1. Motivation</Typography>
                         <Typography variant='body1' className='section-desc'>
-                        With the web as one of the major frontiers and resources of our day, promoting accessibility is of utmost importance, particularly with the rise of the internet as a source of information. all too often, valuable sources maintained by technical experts are not accessible to the general public. as i am passionate about technology, communication, and accessibility as a disable computer scientist, i wanted to explore how we can make technical sources more accessible to the general public.
+                        With the web as one of the major frontiers and resources of our day, promoting accessibility is of utmost importance, particularly with the rise of the internet as a source of information. all too often, valuable sources maintained by technical experts are not accessible to the general public. as i am passionate about technology, communication, and accessibility as a disabled computer scientist, i wanted to explore how we can make technical sources more easily understandable and accessible.
                         </Typography>
                         <br />
                         <Typography variant='body1' className='section-desc'>
-                            in particular, i set out to redesign the <a href="https://news.ycombinator.com/">hackernews</a> portion of y combinator's website, iterating through the process of identifying usability and accessibility issues, prototypying, and redesigning to create an optimal product. 
+                        when i came to this idea, i almost immediately thought of hackernews <a href="https://news.ycombinator.com/">hackernews</a>, the news portion of y combinator's website, as it is a site i frequent. iterating through the process of identifying usability and accessibility issues, prototypying, and redesigning, i made important steps toward an optimal product. 
                         </Typography>
                         <br />
                         <Typography variant='body1' className='section-desc'>
                             broadly, my approach was to first identify usability and accessibility issues with the current design, identify potential solutions, create high-fidelity prototypes at different resolutions, and code the prototype to create an actual website. The redesigned website is static, but nevertheless, it represents a step in the right direction toward a more accessible source for up-to-date tech news. You can find the live prototype <a href="/portfolio/hackernews-redesign/live">here</a>.
-                            if you're interested in the process, read more down below!
+                            as i delved into the site, i found more and more concerning issues--especially for a site that champions technology--so i highly recommend you read along; there is a lot to be said for the implications of the current design.
                         </Typography>
                     </CardContent>
                 </Card>
@@ -67,12 +67,12 @@ function HackerNewsSummary(){
                             </ol>
                         </Typography>
                         <Typography>
-                        After noting these problems, I also employed <a href="https://wave.webaim.org/">WAVE</a> to identify more acessibility issues. WAVE identified the same issues that I did, as well as a few additional ones. Some detected accessibility issues were not visible to the naked eye, such as having many empty links (could be bothersome for people using screen readers), images without alt text, use of layout tables (often don’t work w screen readers), lack of heading structure (no clear hierarchy for assistive tech users); this shows the disparity of web accessibility between people with disabilities and people who don’t. WAVE did note that the site's HTML had the language attribute set to English, which is a good start, as it helps those who use screen readers.
+                        After noting these problems, I also employed <a href="https://wave.webaim.org/">webaim WAVE</a> to identify accessibility-specific issues. WAVE identified the same issues that I did, as well as a few additional ones. Some detected accessibility issues were not visible to the naked eye, such as having many empty links (could be bothersome for people using screen readers), images without alt text, use of layout tables (which don’t work with screen readers), a complete lack of heading structure (no clear hierarchy for assistive tech users); this shows the disparity of web accessibility between people with disabilities and people who don’t. WAVE noted  the site's HTML language attribute is set to English as a good start; however, this measure is likely largely ineffective since the page lacks the logical structure needed for screen-reader function.
                         </Typography>
-                    <Typography variant='h5' className="callout">webaim wave results highlight multitudinous issues</Typography>
+                    <Typography variant='h5' className="callout">webaim wave results highlight many issues</Typography>
                     </CardContent>
                     <CardMedia
-                        className="Card-image"
+                        className="Card-image-app"
                         component="img"
                         height="100%"
                         width="scale-down"
@@ -83,7 +83,7 @@ function HackerNewsSummary(){
 
                 <Card className='section'>
                     <CardContent>
-                        <Typography variant='h4' className='section-title'>3. addressing issues</Typography>
+                        <Typography variant='h4' className='section-title'>3. high-fidelity prototyping</Typography>
                         <Typography variant='body1' className='section-desc'>
                             i identified the following steps to improve hackernews:
                             <ol>
@@ -100,56 +100,50 @@ function HackerNewsSummary(){
                         <Typography variant='body1' className='section-desc'>
                             i then went through the process of implementing these changes in high-fidelity wireframes on figma for mobile, tablet, and desktop. for consistency's sake, i first created a visual design style guide.
                         </Typography>
-                        <div className='mockup-images'>
+                        <Typography variant='h5' className='callout'>style guide</Typography>
                         <CardMedia
-                            className="Card-image"
+                            className="Card-image-app-app"
                             component="img"
-                            height="100%"
-                            width="scale-down"
-                            image={process.env.PUBLIC_URL + "/assets/D7ADC5D6-64C8-4716-BFF9-EE07B7509829.jpeg"}
-                            alt="">
+                            image={process.env.PUBLIC_URL + "/assets/style-guide.png"}
+                            alt="redesign visual style guide">
                         </CardMedia>
-                        <CardMedia
-                            className="Card-image"
-                            component="img"
-                            height="100%"
-                            width="scale-down"
-                            image={process.env.PUBLIC_URL + "/assets/eye-tracking2.PNG"}
-                            alt="">
-                        </CardMedia>
+                        <div className='mobile'>
+                            <Typography variant='h5' className='callout'>mobile layout</Typography>
+                            <CardMedia
+                                className="phone"
+                                component="img"
+                                image={process.env.PUBLIC_URL + "/assets/phone.png"}
+                                alt="redesigned mobile layout">
+                            </CardMedia>
+                            <Typography variant='h5' className='callout'>tablet layout</Typography>
+                            <CardMedia
+                                className="tablet"
+                                component="img"
+                                image={process.env.PUBLIC_URL + "/assets/tablet.png"}
+                                alt="redesigned tablet layout">
+                            </CardMedia>
                         </div>
+                        <Typography variant='h5' className='callout'>desktop layout</Typography>
+                        <CardMedia
+                            component="img"
+                            image={process.env.PUBLIC_URL + "/assets/image.png"}
+                            alt="redesigned desktop layout">
+                        </CardMedia>
                     </CardContent>
                 </Card>
-
                 <Card className='section'>
                     <CardContent>
-                        <Typography variant='h4' className='section-title'>4. updating Data: State</Typography>
+                        <Typography variant='h4' className='section-title'>4. static redesign</Typography>
                         <Typography variant='body1' className='section-desc'>
-                            after implementing the <b>props</b> system, i implemented the <b>state</b> system to transform my static page into a dynamic one. i learned state is used to manage data that changes as a result of user interaction.
-                        </Typography>
-                        <Typography variant='body1' className='section-desc'>
-                            this is the initial state model i used for the app:
+                            after prototyping, i developed a fledgling, static redesign of the hackernews website, quite accurate to my initial sketches. while not dynamic, this static version of the site is a good starting point for redesign. it addresses key feature updates that ought to take place, such as:
                             <ol>
-                                <li>products: the <b>App</b> component initializes the state of the app by setting the <b>cart</b> state to an empty list, <b>cart total</b> to $0, and <b>product list</b> to the list of all products.</li>
-                                <li>sorting and filtering (i): the <b>app</b> initializes states for tracking <b>sort</b> and <b>filter list</b> parameters to defaults: sort by popularity and no filters</li>
-                                <li>sorting and filtering (ii): the <b>App</b> component also initializes the state of the <b>SortOpts</b> and <b>FilterOpts</b> components by passing the <b>sort</b> and <b>filter</b> states as props.</li>
+                                <li>a lack of pagination or heading structure (effectively making this site completely inaccessible to users of screenreaders)</li> 
+                                <li>the lack of a well-indicated search bar</li>
+                                <li>unintuitive interaction features (upvoting, downvoting, hiding, and commenting)</li>
+                                <li>extremely lacking visual contrast</li>
                             </ol>
-                            <br />
-                            using app component methods passed to the child components, each component could update the state of the app as needed. the user could interact with different  buttons and form controls to call these state-altering methods.
-                            <br />
-                        </Typography>
-                        <Typography variant='h5' className='callout'>!! problem !!</Typography>
-                        <Typography variant='body1' className='section-desc'>
-                            After thinking the app was complete, i discovered that the method i had implemented for returning sorting and filtering to defaults also returned the cart to an empty state, which was not the desired behavior.
-                            in fact, it reset <b>all state data</b>, deleting all user interactions. i initially thought i had to restructure my model. i was simply resetting the entire web app!
-                            <br />
-                            <br />
-                            however, after some research, i discovered that if i made the key props of the <b>sortopts</b> and <b>filteropts</b> components in the <b>app</b> component <b>depend on the app's state</b>,
-                            then i could clear the state of the sorting and filtering options without clearing the state of the cart by updating this so-called <b>resetKey</b> state.
-                            <br />
-                            <br />
-                            this was a very important lesson for me, as it taught me that i should not be afraid to change my model if it is not working, but that i should think critically about what degree of change is needed. i had to change my model to make it work!
-                            i was super proud to have figured this out on my own, and i was able to implement the fix in a few minutes.
+                        These issues inevitably make for a poor user experience for countless users. for some users of assistive technology, it is likely completely impossible to use this site in any effective capacity; the redesign addresses these core issues.
+                        Particularly, by giving the page a hierarchy were none exister before, my redesign took a site once completely untenable for use with assistive technology ande made it, at the very least, now usable for many users.
                         </Typography>
                     </CardContent>
                 </Card>
@@ -158,19 +152,13 @@ function HackerNewsSummary(){
                     <CardContent>
                         <Typography variant='h4' className='section-title'>5. Final Thoughts</Typography>
                         <Typography variant='body1' className='section-desc'>
-                            i am very proud of the work i did on this project. i learned:
-                            <ol>
-                                <li>how to build a stateful web app from scratch with react.js, after working with static pages in html/css</li>
-                                <li>how logically fluid frontend development is, which differs from the more mathematical logic i employ in data and ai/ml</li>
-                                <li>that taking a careful, planned, researched approach when facing a new issue allows for quick problem resolution</li>
-                                <li>that when taking on new challenges, i should not let myself be blinded by previous knowledge (e.g. static vs. stateful web dev)</li>
-                            </ol>
+                            this project was a great learning experience for me; prior to this project, i had never designed a web-based application, let alone a responsive one. i gained a great appreciation for the designers whose work allows for seamless user experiences across a variety of devices and screen sizes. 
+                            that being said, my greatest takeaway from this projet was the importance of accessibility, in particular as someone who has multiple disabilities myself. especially in the context of the web and even further in the context of a site with a large userbase that is made by and for the tech community,
+                            it is extremely disheartening to see sites like Hackernews that are so poorly suited for accessibility. frankly, it is disgraceful; this website represents a resource for users to find jobs in startups, teach other important skills, and learn about the latest in tech. it is a resource that is used by many people, and it is important that it be accessible to all. 
+                            
+                            i hope that this project will serve as a reminder to myself and others to consider accessibility in all of our own work. intelligent design practices and accessible design practices are one and the same, and it is important to remember that.
+
                         </Typography> 
-                        <Typography variant='body1' className='section-desc'>
-                            giving how different i found the type of logic behind this app and my typical ai/ml programs to be, i'm intrigued to learn more about how large-scale
-                            web-deployed data and ai/ml tools function. i know that there is a lot to be done in terms of optimizing the performance of these tools on the backend, and this has
-                            left me wondering if the performance of these tools on the frontend is also a concern. i'm excited to learn more about this!
-                        </Typography>
                     </CardContent>
                 </Card>
             </div>
