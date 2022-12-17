@@ -1,0 +1,115 @@
+.about-carousel {
+    margin: 10rem;
+    margin-top: 6rem;
+    padding: 10rem;
+    width: calc(viewport-width*.60) !important;
+    height: 100% !important;
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: transparent !important;
+}
+
+.carousel-card {
+    padding: 1rem !important;
+    /* margin: 1rem !important; */
+    width: fit-content;
+    background: rgb(179, 192, 245) !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    min-height: 550px;
+}
+
+.carousel-heading {
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    font-weight: 500 !important;
+    line-height: 1.5;
+    color: #333;
+    text-align: center;
+    font-size: 3rem !important;
+}
+
+.carousel-paragraph {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #333;
+    text-align: left;
+    padding: 1rem;
+    font-size: 1.2rem !important;
+}
+
+
+/* 
+.carousel-card.active .carousel-paragraph {
+    animation: textclip 1s steps(30) 1s 1 normal both;
+}
+
+.carousel-card.active .carousel-paragraph::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, #fff);
+}
+
+.carousel-card.active .carousel-paragraph::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, #fff);
+}
+
+.carousel-card.active .carousel-paragraph::after {
+    animation: textclip 1s steps(30) 1s 1 normal both;
+}
+
+.carousel-card.active .carousel-paragraph::before {
+    animation: textclip 1s steps(30) 1s 1 normal both;
+} */
+
+
+
+/* .carousel-card.active .carousel-heading {
+    animation: textclip 1s steps(30) 1s 1 normal both;
+}
+
+.carousel-card.active .carousel-heading::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, #fff);
+}
+
+.carousel-card.active .carousel-heading::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, #fff);
+}
+
+.carousel-card.active .carousel-heading::after {
+    animation: textclip 1s steps(30) 1s 1 normal both;
+}
+
+.carousel-card.active .carousel-heading::before {
+    animation: textclip 1s steps(30) 1s 1 normal both;
+} */
+

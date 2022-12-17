@@ -1,0 +1,12 @@
+.iframe {
+    padding-top: 64px;
+    height: 100vw;
+    width: 100%;
+  }
+  
+  .personas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
